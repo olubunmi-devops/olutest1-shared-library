@@ -11,10 +11,10 @@ pipeline {
                    sh 'java -version'
                }
            }
-           stage('demo-newapp'){
+           stage('demo newapp success'){
             steps{
-                sh 'cst /etc/passwd'
-                echo "jenkins is so simple"
+                sh 'cat /etc/passwd'
+                echo "jenkins was a success"
             }
            }
            stage("Checkout Code") {
